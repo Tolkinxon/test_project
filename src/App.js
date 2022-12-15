@@ -13,11 +13,17 @@ export default function App() {
     setCount(count - 1)
   }
 
+  function reset(){
+    setCount(count * 0)
+    }
+
   return (
     <>
       <h2>{count}</h2>
       <button onClick={increment}>increment</button>
       <button onClick={decrement}>decrement</button>
+      <button onClick={reset}>reset</button>
+
     </>
   )
 }
