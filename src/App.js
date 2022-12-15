@@ -1,21 +1,23 @@
 import React, { useState } from 'react'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const [count, hello] = useState(0)
 
 
   function increment() {
-    setCount((cou) => cou + 1)
-    setCount((coun) => coun + 1)
+    hello((cou) => cou + 1)
+    hello((coun) => coun + 1)
     }
 
   function decrement() {
-    setCount(count - 1)
+    hello(count - 1)
   }
 
   function reset(){
-    setCount(count * 0)
+    hello(count * 0)
     }
+
+    
 
   return (
     <>
@@ -23,7 +25,6 @@ export default function App() {
       <button onClick={increment}>increment</button>
       <button onClick={decrement}>decrement</button>
       <button onClick={reset}>reset</button>
-
     </>
   )
 }
