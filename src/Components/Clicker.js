@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export default class Clicker extends React.Component {
-  componentDidMount () {}
+const Clicker = () => {
 
-  componentDidUpdate () {}
+    const [count, hello] = useState(0)
 
-  componentWillUnmount () {}
+    function increment() {
+        hello((cou) => cou + 1)
+        hello((coun) => coun + 1)
+    }
 
-  render() {
-    return <h2>hello world</h2>
-  }
+    function decrement() {
+        hello(count - 1)
+    }
+
+    function reset(){
+        hello(count * 0)
+    }
+
+    return (
+    <>
+        <h2>{count}</h2>
+        <button onClick={increment}>increment</button>
+        <button onClick={decrement}>decrement</button>
+        <button onClick={reset}>reset</button>
+    </>
+    )
 }
+
+export default Clicker
+
+
+
+
+
