@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h3>React App</h3>
+      <h3>Hello world</h3>
       <button onClick={() => setClick(!isClicked)} >Toggle Clicker</button>
       {isClicked && <Clicker />}
     </div>
