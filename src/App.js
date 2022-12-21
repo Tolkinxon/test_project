@@ -5,9 +5,10 @@ import Clicker from './Components/Clicker'
 export default function App() {
   const [isClicked, setClick] = useState(false)
 
-  useEffect(()=>{
-    console.log('hello world');
-  },[])
+useEffect(() => {console.log('did mount')
+   return () => console.log('bye bye'); 
+  },[isClicked])
+
 
   return (
     <div className="container">
