@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef} from 'react'
 import './App.css'
 import Clicker from './Components/Clicker'
 
@@ -18,11 +18,34 @@ export default function App() {
   //   </div>
   // )
 
+
+
+
+//*****************************************************************************/
+//SECOND CODE ABOUT INPUTS
+//*****************************************************************************/
+
+const currentRef = useRef(null)
+
+// const changeRef = () => {
+//   currentRef.current.focus()
+// }
+
+const [valuee ,setValuee] = useState(' ')
+
+useEffect(() => {
+  currentRef.current.focus()
+},[])
+
+
   return (
-    <div>
+  <div className='container'>
       <h1>hello world</h1>
-      <input type='text' placeholder='input your name'/>
-      <button>Click</button>
-    </div>
+      <input 
+      type='text' 
+      placeholder='input your name' 
+      ref={currentRef}/>
+      <button>Clear</button>
+  </div>
   )
 }
