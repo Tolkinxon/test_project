@@ -40,8 +40,8 @@ ul, ol {
 
 /* ----------------------header---------------------- */
 .header {
-    max-width: 100vw;
-    width: 100%;
+    width: 1500px;
+    /* width: 100%; */
     height: 44px;
     background-color: #2ea97d;
     position: fixed;
@@ -53,7 +53,7 @@ ul, ol {
 /* -----------------------left side------------------ */
 .left-side {
     width: 200px;
-    height: calc(100vh - 44px);
+    min-height: 1000px;
     position: fixed;
     top: 44px;
     background-color: #fff;
@@ -105,33 +105,96 @@ ul, ol {
     color: #6D7471;
 }
 
+.main-side__list-wrapper {
+    height:100%;
+    border: 1px solid #C9D2CE;
+    border-radius: 3px 3px 0px 0px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
 .main-side__list-name {
     width: 274px;
     height: 40px;
     display: flex;
     justify-content: left;
+    border-radius: 3px 3px 0px 0px;
     align-items: center;
     padding: 0px 10px;
-    border-radius: 3px 3px 0px 0px;
     background: #F2FAF6;
-    border: 1px solid #C9D2CE;
+    border-bottom: 1px solid #C9D2CE;
     
     color: #414644;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
+
+    margin-bottom: 12px;
     
 }
 
-.main-side__heading2 {
+.main-side__list-heading2 {
     line-height: 10px;
 }
 
-.main-side__heading2 + img {
+.main-side__list-heading2 + img {
     width: 3px;
     height: 3px; 
     margin: 0px 4px
+}
+
+.main-side__item {
+    width: 258px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 12px;
+
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.list__proffestion-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% ;
+}
+
+.list__proffestion    {
+    overflow: hidden;
+    color:  #181A19;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.list-heading + img {
+    width: 20px;
+    height: 20px;
+}
+
+.list__proffession-area {
+    width: 186px;
+    height: 14px;
+    flex-shrink: 0;
+    overflow: hidden;
+    color:  #6D7471;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
