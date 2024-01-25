@@ -195,6 +195,66 @@ ul, ol {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 8px;
+}
+
+.list__condition-wrapper {
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+
+.list__condition {
+    display: flex;
+    align-items: center;
+    color:  #856EC6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border-radius: 4px;
+    background: #F6F2FF;
+    padding: 4px 8px;
+}
+
+.list_count-1, .list_count-2 {
+    display: flex;
+    align-items: center;
+
+    color:  #414644;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border-radius: 4px;
+    padding: 4px 4px;
+    border: 1px solid #EBF3EF;
+    background:  #FAFFFC;
+}
+
+.list_count-1::before, .list_count-2::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: 16px  16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4px;
+}
+
+.list_count-1::before {
+    background-image: url('../images/tabler_users.svg');
+}
+
+.list_count-2::before {
+    background-image: url('../images/tabler_file-description.svg');    
 }
 
 
