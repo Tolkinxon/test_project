@@ -10,10 +10,13 @@ export default function App() {
 
 
  return (
-    <>
+    <div className='container'>
        <Header />
-       <LeftSide /> 
-       <MainSide />
-    </>
+       <div className='bottom-side'>
+         <LeftSide /> 
+         <MainSide />
+       </div>
+      
+    </div>
  )
 }
