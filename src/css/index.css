@@ -156,6 +156,7 @@ ul, ol {
     border-radius: 4px;
     background: #FFF;
     box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 12px;
 }
 
 .list__proffestion-wrapper{
@@ -256,6 +257,41 @@ ul, ol {
 .list_count-2::before {
     background-image: url('../images/tabler_file-description.svg');    
 }
+
+.list__personal-image {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.list__personal-image img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.list__personal-image p {
+    width: 150px;
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.list__personal-image p:nth-child(1) {
+    margin-bottom: 2px;
+    color:  #969F9B;    
+}
+
+.list__personal-image p:nth-child(2) {
+    color:  #414644;    
+}
+
 
 
 
