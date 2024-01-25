@@ -74,11 +74,12 @@ ul, ol {
 .main-side {
     width: calc(100% - 200px);
     height: calc(100vh - 44px);
-    overflow-y: hidden;
-    overflow-x: scroll;
+ 
     background-color: #f0f0f0;
     padding-top: 20px;
     padding-left: 32px;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 .main-side__heading-wrapper {
@@ -115,14 +116,30 @@ ul, ol {
     color: #6D7471;
 }
 
+.main-side__all-lists-wrapper {
+    width: 1250px;
+}
+
 .main-side__list-wrapper {
+  
+    max-width: 284px;
+    width: 100%;
+    height: calc(100vh - 120px);
     border: 1px solid #C9D2CE;
     border-radius: 3px 3px 0px 0px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     margin-right: 26px;
+    float: left;
+    
+
+}
+
+.main-side__list {
+    overflow-y: auto;  
+    overflow-x: hidden; 
 }
 
 .main-side__list-name {

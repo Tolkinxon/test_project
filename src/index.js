@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import AppDragdropDemo from './AppDragdropDemo';
 import './css/index.css'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <AppDragdropDemo />,
   document.getElementById('root')
 );
 
