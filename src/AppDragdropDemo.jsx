@@ -22,170 +22,72 @@ export default function App() {
 }
 
 
-// import React, { Component } from 'react';
 
 
-// export default class AppDragDropDemo extends Component { 
-
-//    onDragStart = (ev, id) => {
-//       console.log('dragstart', id);
-//       ev.dataTransfer.setData('id', id)
-//    }
-
-//     onDragOver = (ev) => {
-//       ev.preventDefault()
-//    }
-
-
-//    onDrop = (ev, cat) => {         
-//       let id = ev.dataTransfer.getData("id");  
-//       let tasks = this.state.tasks.filter((task) => {      
-//           if (task.name == id){               
-//               task.category = cat;                
-//           }                     
-//           return task;          
-//                                           });         
-//      this.setState({ ...this.state, tasks });
-//    }
-
-//    state = {      
-//       tasks: [
-//                {
-//                   name:"React",             
-//                   category:"wip",             
-//                   bgcolor:"pink"
-//                },                        
-//               {   name:"Learn Angular",   
-//                   category:"wip",              
-//                   bgcolor: "yellow"
-//                },                       
-//               {   name:"hello",
-//                   category:"complete",
-//                  bgcolor:"red"
-//                },    
-//               {   name:"Vue",
-//                   category:"complete",
-//                   bgcolor:"skyblue"
-//                }
-
-//             ]} 
-
-//   render() {      
-//       let tasks = { wip: [],                 
-//                complete: []          
-//                  }        
-
-           
-//                      this.state.tasks.forEach ((t) => { tasks[t.category].push(
-//                      <div key={t.name}  
-//                            onDragStart={(e)=>this.onDragStart(e, t.name)} 
-//                            draggable
-//                            cassName="draggable" 
-//                            style={{backgroundColor: t.bgcolor}}
-//                      >
-//                         {t.name}
-//                      </div>
-//                                                                               );
-//                                                        }
-//                                                )
-               
-          
-
-
-
-//     return (
-//       <div className="container-drag">    
-//          <h2 className="header">DRAG & DROP DEMO</h2>                      
-//             <div className='wrapper'>
-//                <div className="wip" 
-//                     onDragOver={(e)=>this.onDragOver(e)} 
-//                     onDrop={(e)=>{this.onDrop(e, "wip")}}
-//                >  
-//                   <span className="task-header">WIP</span> 
-//                   {tasks.wip}                 
-//                </div>                   
-//                <div className="droppable" 
-//                     onDragOver={(e)=>this.onDragOver(e)} 
-//                     onDrop={(e)=>this.onDrop(e, "complete")}
-//                >   
-//                      <span className="task-header">COMPLETED</span>                          
-//                      {tasks.complete}                     
-//                </div>  
-//             </div>           
-//      </div>);
-
-//    }
-
-// }
-
-
-// import { useState } from "react";
+// import { useEffect, useState } from "react";
+// import data from './data/data'
 
 // export default function AppDragDropDemo () {
 
-//    const [element, setElement] = useState(
-//       [
-//          {
-//             name: 'spoon',
-//             category: 'plastic',
-//             number: 1
-//          },
-//          {
-//             name: 'fork',
-//             category: 'plastic',
-//             number: 2
-//          }, 
-//          {
-//             name: 'water',
-//             category: 'liquid',
-//             number: 3
-//          }, 
-//          {
-//             name: 'oil',
-//             category: 'liquid',
-//             number: 4
-//          },
-//       ]
-//    )
+//    const [element, setElement] = useState([])
+
+//    useEffect(() => {
+//       setElement(data)
+//    }, [])
 
 
+//       let elements = {
+//          liquid: [],
+//          plastic: []
+//       }
+      
 
-      // let elements = {
-      //    liquid: [],
-      //    plastic: []
-      // }
 
-      // const onDragStart = (e, id) => {
-      //    e.dataTransfer.setData('id', id)
-      //    console.log(e);
-      // }
+//       const onDragStart = (e, id) => {
+//          e.dataTransfer.setData('id', id)
+//       }
 
-      // const onDragOver = (e) => {
-      //    e.preventDefault()
-      // }
+//       const onDragOver = (e) => {
+//          e.preventDefault()
+//       }
 
-      // const onDrop = (e, cat) => {
-      //    let id = e.dataTransfer.getData('id')
-      //    let element2 = element.filter(item => {
-      //       if(item.name === id){
-      //          item.category = cat
-      //       }
-      //       return item
-      //    })
 
-      //    setElement({...element, element2})
-      // }
+//       const onDrop = (e, cat) => {
+//          let id = e.dataTransfer.getData('id')
 
+
+//          let element2 = element.filter(item => {
+//             if(item.name !== id){
+//                return item
+//             }
+//          })
+
+//          let element3 = element.filter(item => {
+//             if(item.name === id){
+//                item.category = cat
+//                return item
+//             }
+//          })
+
+//          setElement([...element2, ...element3])
+         
+//       }
+      
 
 //       element.forEach(element => {
 //          elements[element.category].push(
 //             <div key={element.name}  
 //                  onDragStart={(e)=> onDragStart(e, element.name)} 
-//                  draggable>
+//                  draggable
+//                  style={{order:element.number}}>
 //                  {element.name}
 //              </div>
 //          )
 //       });
+
+         
+      
+
       
 
 
@@ -193,10 +95,10 @@ export default function App() {
 //       return (
        
 //          <div className="container">
-//                <div className="liquid" onDragOver={(e) => onDragOver(e)}>
+//                <div className="liquid" onDragOver={(e) => onDragOver(e)} onDrop={(e) => onDrop(e, 'liquid')}>
 //                      {elements.liquid}
 //                </div>
-//                <div className="plastic" onDragOver={(e) => onDragOver(e)} >
+//                <div className="plastic" onDragOver={(e) => onDragOver(e)} onDrop={(e) => onDrop(e, 'plastic')}>
 //                      {elements.plastic}
 //                </div>
 //          </div>
