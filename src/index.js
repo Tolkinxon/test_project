@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppDragdropDemo from './AppDragdropDemo';
-import './css/index.css'
+import App from './App';
+import './css/main.css'
 
 
 ReactDOM.render(
-    <AppDragdropDemo />,
+    <App />,
   document.getElementById('root')
 );
 

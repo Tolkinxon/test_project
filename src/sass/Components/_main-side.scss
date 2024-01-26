@@ -1,0 +1,13 @@
+.main-side {
+    width: calc(100% - 200px);
+    height: calc(100vh - 44px);
+ 
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    padding-left: 32px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+

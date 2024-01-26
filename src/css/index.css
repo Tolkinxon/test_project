@@ -82,6 +82,8 @@ ul, ol {
     overflow-x: scroll;
 }
 
+
+
 .main-side__heading-wrapper {
     display: flex;
     justify-content: left;
@@ -116,9 +118,15 @@ ul, ol {
     color: #6D7471;
 }
 
+
+
+
+
+
 .main-side__all-lists-wrapper {
     width: 1250px;
 }
+
 
 .main-side__list-wrapper {
   
@@ -133,9 +141,14 @@ ul, ol {
     justify-content: start;
     margin-right: 26px;
     float: left;
-    
-
 }
+
+
+
+
+
+
+
 
 .main-side__list {
     overflow-y: auto;  
@@ -143,6 +156,7 @@ ul, ol {
 }
 
 .main-side__list-name {
+    border: 2px solid red;
     width: 274px;
     display: flex;
     justify-content: left;
@@ -164,8 +178,7 @@ ul, ol {
 
 .main-side__list-heading2 {
     font-weight: bold;
-    /* line-height: 10px; */
-    /* border: 2px solid red; */
+
 }
 
 .main-side__list-heading2 + img {
@@ -174,6 +187,16 @@ ul, ol {
     margin: 0px 4px;
     
 }
+
+
+
+
+
+
+
+
+
+
 
 .main-side__item {
     width: 258px;
@@ -187,7 +210,6 @@ ul, ol {
     box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.05) inset;
     margin-bottom: 12px;
     position: relative;
-
 }
 
 
@@ -321,7 +343,7 @@ ul, ol {
 }
 
 .list__personal-image p:nth-child(2) {
-    color:  #414644;    
+    color:  #414644;   
 }
 
 

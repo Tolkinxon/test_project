@@ -1,0 +1,36 @@
+.main-side__list {
+    overflow-y: auto;  
+    overflow-x: hidden; 
+}
+
+&__list-name {
+    width: 274px;
+    display: flex;
+    justify-content: left;
+    border-radius: 3px 3px 0px 0px;
+    align-items: baseline;
+    padding: 12px 12px 12px 9px;
+    background: #F2FAF6;
+    border-bottom: 1px solid #C9D2CE;
+    
+    color: #414644;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+    margin-bottom: 12px;
+    
+}
+
+&__list-heading2 {
+    font-weight: bold;
+
+}
+
+&__list-heading2 + img {
+    width: 3px;
+    height: 8px; 
+    margin: 0px 4px;
+    
+}

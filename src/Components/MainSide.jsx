@@ -110,15 +110,15 @@ export default function MainSide () {
                 <div className='main-side__heading-wrapper'>
                    <h1 className="main-side__heading">Заявки</h1>
                    <img src={point} alt="there is an point" width={2} height={3}/>
-                   <p className='main-side__counter'>22</p>
+                   <p className='main-side__counter'>{element.length}</p>
                 </div>
 
             <div className='main-side__all-lists-wrapper' >
                 <div className="main-side__list-wrapper" onDragOver={(e) => onDragOver(e)}  onDrop={(e) => onDrop(e, 'new')}>
                     <div className='main-side__list-name'>
                     <p className="main-side__list-heading2">New</p>
-                    <img src={point2} alt="there is an point" width={3} height={3}/>
-                    <p className='main-side__list-counter'>4</p>
+                    <img src={point2} alt="there is an point" width={3} height={3} style={{display: elements.new.length == 0 ? 'none' :'block' }}/>
+                    <p className='main-side__list-counter' style={{display: elements.new.length == 0 ? 'none' :'block' }}>{elements.new.length}</p>
                     </div>
                     <ul className="main-side__list">
                         {elements.new}
@@ -128,8 +128,8 @@ export default function MainSide () {
                 <div className="main-side__list-wrapper" onDragOver={(e) => onDragOver(e)} onDrop={(e) => onDrop(e, 'waited')}>
                     <div className='main-side__list-name'>
                     <p className="main-side__list-heading2">Waited</p>
-                    <img src={point2} alt="there is an point" width={3} height={3}/>
-                    <p className='main-side__list-counter'>4</p>
+                    <img src={point2} alt="there is an point" width={3} height={3} style={{display: elements.waited.length == 0 ? 'none' :'block' }}/>
+                    <p className='main-side__list-counter' style={{display: elements.waited.length == 0 ? 'none' :'block' }}>{elements.waited.length}</p>
                     </div>
                     <ul className="main-side__list">
                         {elements.waited}
@@ -139,8 +139,8 @@ export default function MainSide () {
                 <div className="main-side__list-wrapper" onDragOver={(e) => onDragOver(e)}  onDrop={(e) => onDrop(e, 'accepted')}>
                     <div className='main-side__list-name'>
                     <p className="main-side__list-heading2">Accepted</p>
-                    <img src={point2} alt="there is an point" width={3} height={3}/>
-                    <p className='main-side__list-counter'>4</p>
+                    <img src={point2} alt="there is an point" width={3} height={3} style={{display: elements.accepted.length == 0 ? 'none' :'block' }}/>
+                    <p className='main-side__list-counter' style={{display: elements.accepted.length == 0 ? 'none' :'block' }}>{elements.accepted.length}</p>
                     </div>
                     <ul className="main-side__list">
                         {elements.accepted}
@@ -150,8 +150,8 @@ export default function MainSide () {
                 <div className="main-side__list-wrapper" onDragOver={(e) => onDragOver(e)} onDrop={(e) => onDrop(e, 'deleted')}>
                     <div className='main-side__list-name'>
                     <p className="main-side__list-heading2">Deleted</p>
-                    <img src={point2} alt="there is an point" width={3} height={3} />
-                    <p className='main-side__list-counter'>4</p>
+                    <img src={point2} alt="there is an point" width={3} height={3} style={{display: elements.deleted.length == 0 ? 'none' :'block' }} />
+                    <p className='main-side__list-counter' style={{display: elements.deleted.length == 0 ? 'none' :'block' }}>{elements.deleted.length}</p>
                     </div>
                     <ul className="main-side__list">
                         {elements.deleted}

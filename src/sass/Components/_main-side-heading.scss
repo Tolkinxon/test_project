@@ -1,0 +1,35 @@
+
+.main-side__heading-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-side__heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #181A19;
+}
+
+.main-side__heading + img {
+    width: 3px;
+    height: 8px;
+    color: #386e56;
+    margin: 0px 8px
+}
+
+
+
+.main-side__counter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #6D7471;
+}
+
