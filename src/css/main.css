@@ -357,6 +357,34 @@ ul, ol {
   display: flex;
 }
 
+.main-side::-webkit-scrollbar {
+  height: 10px;
+  background-color: transparent;
+}
+
+.main-side::-webkit-scrollbar-button {
+  display: none;
+}
+
+.main-side::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 182, 182);
+  border-radius: 10px;
+}
+
+.main-side__list::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent;
+}
+
+.main-side__list::-webkit-scrollbar-button {
+  display: none;
+}
+
+.main-side__list::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 182, 182);
+  border-radius: 10px;
+}
+
 .header {
   width: 100%;
   height: 44px;
@@ -472,7 +500,6 @@ ul, ol {
   background: #FFF;
   box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.05) inset;
   margin-bottom: 12px;
-  position: relative;
 }
 
 .list__proffestion-wrapper {
@@ -603,36 +630,3 @@ ul, ol {
 .list__personal-image p:nth-child(2) {
   color: #414644;
 }/*# sourceMappingURL=main.css.map */
-
-
-
-
-.main-side::-webkit-scrollbar {
-  height: 10px;
-  background-color: transparent;
-}
-
-.main-side::-webkit-scrollbar-button {
-  display: none;
-}
-
-.main-side::-webkit-scrollbar-thumb {
-  background-color: rgb(189, 182, 182);
-  border-radius: 10px;
-}
-
-
-
-
-.main-side__list::-webkit-scrollbar {
-  width: 7px;
-  background-color: transparent;
-}
-
-.main-side__list::-webkit-scrollbar-button {
-  display: none;
-}
-.main-side__list::-webkit-scrollbar-thumb {
-  background-color: rgb(189, 182, 182);
-  border-radius: 10px;
-}

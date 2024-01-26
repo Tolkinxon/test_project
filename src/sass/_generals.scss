@@ -29,3 +29,35 @@ ul, ol {
 
 
 
+.main-side::-webkit-scrollbar {
+    height: 10px;
+    background-color: transparent;
+  }
+  
+  .main-side::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .main-side::-webkit-scrollbar-thumb {
+    background-color: $scrollbarColor;
+    border-radius: 10px;
+  }
+  
+  
+  
+  
+  .main-side__list::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+  
+  .main-side__list::-webkit-scrollbar-button {
+    display: none;
+  }
+  .main-side__list::-webkit-scrollbar-thumb {
+    background-color: $scrollbarColor;
+    border-radius: 10px;
+  }
+
+
+

@@ -3,7 +3,7 @@
     overflow-x: hidden; 
 }
 
-&__list-name {
+.main-side__list-name {
     width: 274px;
     display: flex;
     justify-content: left;
@@ -23,12 +23,12 @@
     
 }
 
-&__list-heading2 {
+.main-side__list-heading2 {
     font-weight: bold;
 
 }
 
-&__list-heading2 + img {
+.main-side__list-heading2 + img {
     width: 3px;
     height: 8px; 
     margin: 0px 4px;

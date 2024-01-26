@@ -21,7 +21,7 @@
     width: 100% ;
 }
 
-&__proffestion    {
+.list__proffestion    {
     overflow: hidden;
     color:  #181A19;
     text-overflow: ellipsis;
@@ -33,12 +33,12 @@
     line-height: normal;
 }
 
-&-heading + img {
+.list-heading + img {
     width: 20px;
     height: 20px;
 }
 
-&__proffession-area {
+.list__proffession-area {
     width: 186px;
     height: 14px;
     flex-shrink: 0;
@@ -54,7 +54,7 @@
     margin-bottom: 8px;
 }
 
-&__condition-wrapper {
+.list__condition-wrapper {
     width: 186px;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@
 }
 
 
-&__condition {
+.list__condition {
     display: flex;
     align-items: center;
     color:  #856EC6;
@@ -77,7 +77,7 @@
     padding: 4px 8px;
 }
 
-&_count-1, &_count-2 {
+.list_count-1, .list_count-2 {
     display: flex;
     align-items: center;
 
@@ -94,7 +94,7 @@
     background:  #FAFFFC;
 }
 
-&_count-1::before, &_count-2::before {
+.list_count-1::before, .list_count-2::before {
     content: '';
     display: inline-block;
     width: 16px;
@@ -105,27 +105,27 @@
     margin-right: 4px;
 }
 
-&_count-1::before {
+.list_count-1::before {
     background-image: url('../images/tabler_users.svg');
 }
 
-&_count-2::before {
+.list_count-2::before {
     background-image: url('../images/tabler_file-description.svg');    
 }
 
-&__personal-image {
+.list__personal-image {
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
-&__personal-image img {
+.list__personal-image img {
     width: 28px;
     height: 28px;
     margin-right: 8px;
 }
 
-&__personal-image p {
+.list__personal-image p {
     width: 150px;
     height: 14px;
     overflow: hidden;
@@ -138,12 +138,12 @@
     line-height: normal;
 }
 
-&__personal-image p:nth-child(1) {
+.list__personal-image p:nth-child(1) {
     margin-bottom: 2px;
     color:  #969F9B;    
 }
 
-&__personal-image p:nth-child(2) {
+.list__personal-image p:nth-child(2) {
     color:  #414644;   
 }
 
