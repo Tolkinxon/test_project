@@ -39,7 +39,7 @@
          id: 4
       },
       {
-         name: 'Nazar Malik',
+         name: 'Monika Johanson',
          proffession: 'UX/UI дизайнер',
          workPlace: 'Отдел разработки мобильного приложения',
          listCount: 2,
@@ -48,7 +48,7 @@
          id: 5
       },
       {
-         name: 'Nazar Malik',
+         name: 'Kim Li',
          proffession: 'UX/UI дизайнер',
          workPlace: 'Отдел разработки мобильного приложения',
          listCount: 3,
